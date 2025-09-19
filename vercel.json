@@ -1,0 +1,21 @@
+{
+  "build": {
+    "command": "npm run build",
+    "environment": {
+      "DATABASE_URL": "@DATABASE_URL"
+    }
+  },
+  "dev": {
+    "command": "npm run dev"
+  },
+  "env": {
+    "DATABASE_URL": {
+      "description": "PostgreSQL connection string for Neon database",
+      "value": "postgresql://username:password@hostname:port/database?sslmode=require"
+    },
+    "NODE_ENV": {
+      "description": "Environment setting",
+      "value": "production"
+    }
+  }
+}
