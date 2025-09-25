@@ -3,41 +3,32 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:client": "vite",
-    "dev:server": "nodemon server/index.js",
+    "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview",
-    "db:migrate": "prisma migrate dev",
-    "db:generate": "prisma generate",
-    "db:seed": "node prisma/seed.js"
+    "preview": "vite preview"
   },
-  "keywords": ["react", "typescript", "vite", "tailwindcss", "prisma", "postgres", "demo"],
+  "keywords": [
+    "react",
+    "typescript",
+    "vite",
+    "framer-motion",
+    "frontend"
+  ],
   "author": "React Demos",
   "license": "MIT",
-  "description": "Modern React demos showcasing product management and raffle systems with TypeScript, Vite, TailwindCSS, and Prisma",
+  "description": "Modern React frontend application showcasing professional systems with TypeScript, Vite, and Framer Motion",
   "dependencies": {
-    "@prisma/client": "^6.16.2",
-    "@types/node": "^24.5.2",
-    "autoprefixer": "^10.4.21",
-    "cors": "^2.8.5",
-    "express": "^5.1.0",
     "framer-motion": "^12.23.16",
-    "postcss": "^8.5.6",
-    "prisma": "^6.16.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^7.9.1",
-    "tailwindcss": "^4.1.13"
+    "react-router-dom": "^7.9.1"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.3",
-    "concurrently": "^9.2.1",
-    "nodemon": "^3.1.10",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
     "typescript": "^5.9.2",
     "vite": "^7.1.6"
   }
