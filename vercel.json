@@ -1,11 +1,18 @@
-{{
+{{{
 
-  "buildCommand": "npm run build",  "build": {
+  "rewrites": [
 
-  "outputDirectory": "dist",    "command": "npm run build",
+    {  "buildCommand": "npm run build",  "build": {
 
-  "devCommand": "npm run dev",    "environment": {
+      "source": "/(.*)",
 
+      "destination": "/index.html"  "outputDirectory": "dist",    "command": "npm run build",
+
+    }
+
+  ]  "devCommand": "npm run dev",    "environment": {
+
+}
   "installCommand": "npm install",      "DATABASE_URL": "@DATABASE_URL"
 
   "framework": "vite"    }
