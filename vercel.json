@@ -1,0 +1,27 @@
+{{
+
+  "buildCommand": "npm run build",  "build": {
+
+  "outputDirectory": "dist",    "command": "npm run build",
+
+  "devCommand": "npm run dev",    "environment": {
+
+  "installCommand": "npm install",      "DATABASE_URL": "@DATABASE_URL"
+
+  "framework": "vite"    }
+
+}  },
+  "dev": {
+    "command": "npm run dev"
+  },
+  "env": {
+    "DATABASE_URL": {
+      "description": "PostgreSQL connection string for Neon database",
+      "value": "postgresql://username:password@hostname:port/database?sslmode=require"
+    },
+    "NODE_ENV": {
+      "description": "Environment setting",
+      "value": "production"
+    }
+  }
+}
